@@ -1,0 +1,29 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1491947153227-33d59da6c448?auto=format&fit=crop&w=1400&q=80");
+  font-family: 'Indie Flower';
+}
+
+.container {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#settings {
+  margin-top: 5%;
+}
+
+#currentTimer {
+  padding-bottom: 2%;
+  font-size: 28px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.clock {
+  display: inline-block;
+  width: auto !important;
+}
+
+
