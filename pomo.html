@@ -8,6 +8,8 @@
   <title>Pomodoro Clock</title>
   <link rel="stylesheet" href="pomo.css">
   <link rel="stylesheet" href="flipclock.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -15,38 +17,38 @@
   <div class="container">
     <h1>Pomodoro Clock</h1>
 
-    <div id="settings">
-      <p>Break</p>
-      <div id="break">
-        <button class="plus" id="plusBreak">+</button>
-        <p id="breakNum">5</p>
-        <button class="minus" id="minusBreak">-</button>
+    <div class="row" id="settings">
+      <div class="col-lg-6" id="break">
+        <p>Break</p>
+        <button class="minus btn" id="minusBreak">-</button>
+        <span id="breakLen">5</span>
+        <button class="plus btn" id="plusBreak">+</button>
       </div>
-      <p>Session</p>
-      <div id="session">
-        <button class="plus" id="plusSession">+</button>
-        <p id="sessionNum">25</p>
-        <button class="minus" id="minusSession">-</button>
+      <div class="col-lg-6" id="session">
+        <p>Session</p>
+        <button class="minus btn" id="minusSession">-</button>
+        <span id="sessionLen">25</span>
+        <button class="plus btn" id="plusSession">+</button>
       </div>
     </div>
 
-  <p id="timerTitle">Session</p>
-  <div id="timer" class="clock">
+    <p id="currentTimer">Session</p>
+    <div class="wrapper">
+      <div id="timer" class="clock"></div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn-success" id="start">Start</button>
+      <button class="btn btn-primary" id="stop">Pause</button>
+      <button class="btn btn-danger" id="reset">Reset</button>
+    </div>
 
   </div>
-
-  <div class="controls">
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
-    <button id="reset">Reset</button>
-  </div>
-  </div>
-</div>
 
 </body>
 
 <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script src="flipclock.js"></script>
-<script type="text/javascript" src="clock.js"></script>
+<script src="pomo.js"></script>
 
 </html>
